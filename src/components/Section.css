@@ -1,0 +1,41 @@
+section {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-inner .button {
+  height: 50px;
+  width: 200px;
+  letter-spacing: 1px;
+  background-color: inherit;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.section-inner {
+  position: absolute;
+  left: 80px;
+  bottom: 180px;
+  max-width: 560px;
+}
+
+.section-inner h2 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-inner h4 {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
