@@ -17,6 +17,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  font-size: 14px;
 }
 
 ul {
@@ -28,7 +29,7 @@ li {
   list-style: none;
   position: relative;
   padding: 0.3em;
-  margin: 0.7em;
+  margin: 0.4em;
 }
 
 .navbar ul li a::after {
@@ -51,13 +52,13 @@ li {
 
 }
 
-li:last-child {
+.navbar ul li:last-child {
   margin-left: auto;
 }
 
 .navbar-container {
   width: 100%;
-  margin-left: 1.2em;
+  margin-left: 1em;
 }
 
 @media (max-width: 1378px){

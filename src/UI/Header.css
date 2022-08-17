@@ -1,6 +1,6 @@
 .logo img {
-  height: 50px;
-  width: 250px;
+  height: 40px;
+  width: 200px;
 }
 
 .header-container {
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 
 @media (max-width: 1378px) {
