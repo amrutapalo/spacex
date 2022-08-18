@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Section from "./components/Section";
 import Footer from "./UI/Footer";
@@ -8,9 +9,15 @@ import sectionThree from "/Users/amrutapalo/Desktop/spacex/src/images/section-c.
 import sectionFour from "/Users/amrutapalo/Desktop/spacex/src/images/section-d.webp";
 
 function App() {
+  const [overflow, setOverflow] = useState("auto");
+  document.body.style.overflow = overflow;
+  const setStyle = (overlay) => {
+    overlay ? setOverflow("hidden") : setOverflow("auto");
+  };
+
   return (
     <div className="App">
-      <Header></Header>
+      <Header overflow={setStyle}></Header>
       <Section
         title="STARLINK MISSION"
         subtitle="RECENT LAUNCH"

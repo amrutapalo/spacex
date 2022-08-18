@@ -4,15 +4,17 @@ import "./Header.css";
 import logo from "../images/logo.png";
 import Overlay from "./Overlay";
 
-const Header = () => {
+const Header = (props) => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
 
   const onClickHamburger = () => {
     setShowHamburgerMenu(true);
+    props.overflow(true);
   };
 
   const onClickCloseButton = () => {
     setShowHamburgerMenu(false);
+    props.overflow(false);
   }
 
   return (
