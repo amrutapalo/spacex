@@ -3,8 +3,8 @@ import "./Section.css";
 
 const Section = (props) => {
   return (
-    <section className="reveal" style={{ backgroundImage: `url(${props.image})` }}>
-      <div className={`section-inner`}>
+    <section className="section" style={{ backgroundImage: `url(${props.image})` }}>
+      <div className={`section-inner active`}>
         <h4>{props.subtitle}</h4>
         <h2>{props.title}</h2>
         <div className="button">{props.buttonText}</div>
