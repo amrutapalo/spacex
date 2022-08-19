@@ -1,0 +1,17 @@
+[
+  {
+    "first": ["TOTAL LAUNCHES", 169],
+    "second": ["TOTAL LANDINGS", 129],
+    "third": ["TOTAL REFLIGHTS", 108]
+  },
+  {
+    "first": ["TOTAL LAUNCHES", 3],
+    "second": ["TOTAL LANDINGS", 7],
+    "third": ["TOTAL REFLIGHTS", 4]
+  },
+  {
+    "first": ["TOTAL LAUNCHES", 35],
+    "second": ["VISITS TO THE ISS", 31],
+    "third": ["REFLOWN MISSIONS", 14]
+  }
+]

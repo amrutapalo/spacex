@@ -1,11 +1,14 @@
 import React from "react";
 import "./Product.css";
+import Stats from "./Stats";
 
 const Product = (props) => {
+  console.log(props.stats+"--");
   const myStyle = {
     backgroundImage: `url(${props.image})`,
   };
   return (
+    <>
     <div className="product-container">
       <div className="product" style={myStyle}></div>
 
@@ -14,6 +17,8 @@ const Product = (props) => {
         <div className="subtitle">{props.subtitle}</div>
       </div>
     </div>
+    <Stats stats={props.stats}></Stats>
+    </>
   );
 };
 

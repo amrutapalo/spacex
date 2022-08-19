@@ -13,8 +13,28 @@ import dragon from "/Users/amrutapalo/Desktop/spacex/src/images/dragon.webp";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Product from "./components/Product";
 
+const STATS = JSON.stringify([
+  {
+    first: ["TOTAL LAUNCHES", 169],
+    second: ["TOTAL LANDINGS", 129],
+    third: ["TOTAL REFLIGHTS", 108],
+  },
+  {
+    first: ["TOTAL LAUNCHES", 3],
+    second: ["TOTAL LANDINGS", 7],
+    third: ["TOTAL REFLIGHTS", 4],
+  },
+  {
+    first: ["TOTAL LAUNCHES", 35],
+    second: ["VISITS TO THE ISS", 31],
+    third: ["REFLOWN MISSIONS", 14],
+  },
+]);
+
 function App() {
   const [overflow, setOverflow] = useState("auto");
+  const paramsPattern = /[^{\}]+(?=})/g;
+  console.log(STATS.match(paramsPattern));
   document.body.style.overflow = overflow;
   const setStyle = (overlay) => {
     overlay ? setOverflow("hidden") : setOverflow("auto");
@@ -62,7 +82,12 @@ function App() {
             path="/falcon"
             element={
               <>
-                <Product title="FALCON 9" subtitle="FIRST ORBITAL CLASS ROCKET CAPABLE OF REFLIGHT" image={falcon9}></Product>
+                <Product
+                  title="FALCON 9"
+                  subtitle="FIRST ORBITAL CLASS ROCKET CAPABLE OF REFLIGHT"
+                  image={falcon9}
+                  stats={STATS.match(paramsPattern)[0]}
+                ></Product>
               </>
             }
           ></Route>
@@ -71,7 +96,12 @@ function App() {
             path="/falconHeavy"
             element={
               <>
-                <Product title="FALCON HEAVY" subtitle="THE WORLD’S MOST POWERFUL ROCKET" image={falconheavy}></Product>
+                <Product
+                  title="FALCON HEAVY"
+                  subtitle="THE WORLD’S MOST POWERFUL ROCKET"
+                  image={falconheavy}
+                  stats={STATS.match(paramsPattern)[1]}
+                ></Product>
               </>
             }
           ></Route>
@@ -80,7 +110,12 @@ function App() {
             path="/dragon"
             element={
               <>
-                <Product title="DRAGON" subtitle="SENDING HUMANS AND CARGO INTO SPACE" image={dragon}></Product>
+                <Product
+                  title="DRAGON"
+                  subtitle="SENDING HUMANS AND CARGO INTO SPACE"
+                  image={dragon}
+                  stats={STATS.match(paramsPattern)[2]}
+                ></Product>
               </>
             }
           ></Route>
@@ -89,7 +124,11 @@ function App() {
             path="/humanspaceflight"
             element={
               <>
-                <Product title="HUMAN SPACEFLIGHT" subtitle="MAKING LIFE MULTIPLANETARY" image={falcon9}></Product>
+                <Product
+                  title="HUMAN SPACEFLIGHT"
+                  subtitle="MAKING LIFE MULTIPLANETARY"
+                  image={falcon9}
+                ></Product>
               </>
             }
           ></Route>
