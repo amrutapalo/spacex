@@ -28,9 +28,10 @@
 
 .stats-container .stats .stats-title{
     display: block;
-    font: 22px/32px D-DIN-Medium,Arial,Verdana,sans-serif;
+    font: 20px/32px D-DIN-Medium,Arial,Verdana,sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
     margin: 0;
+    color: rgb(195, 193, 193);
 }

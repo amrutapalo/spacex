@@ -3,7 +3,6 @@ import "./Product.css";
 import Stats from "./Stats";
 
 const Product = (props) => {
-  console.log(props.stats+"--");
   const myStyle = {
     backgroundImage: `url(${props.image})`,
   };

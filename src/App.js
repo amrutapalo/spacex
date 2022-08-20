@@ -31,6 +31,24 @@ const STATS = JSON.stringify([
   },
 ]);
 
+// const STATS = JSON.stringify([
+//   {
+//     first: ["TOTAL LAUNCHES", 169],
+//     second: ["TOTAL LANDINGS", 3],
+//     third: ["TOTAL REFLIGHTS", 4],
+//   },
+//   {
+//     first: ["TOTAL LAUNCHES", 3],
+//     second: ["TOTAL LANDINGS", 7],
+//     third: ["TOTAL REFLIGHTS", 4],
+//   },
+//   {
+//     first: ["TOTAL LAUNCHES", 5],
+//     second: ["VISITS TO THE ISS", 1],
+//     third: ["REFLOWN MISSIONS", 1],
+//   },
+// ]);
+
 function App() {
   const [overflow, setOverflow] = useState("auto");
   const paramsPattern = /[^{\}]+(?=})/g;
